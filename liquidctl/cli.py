@@ -56,11 +56,13 @@ import logging
 from docopt import docopt
 
 import liquidctl.util
+from liquidctl.driver.asetek import AsetekDriver
 from liquidctl.driver.kraken_two import KrakenTwoDriver
 from liquidctl.driver.nzxt_smart_device import NzxtSmartDeviceDriver
 
 
 DRIVERS = [
+    AsetekDriver,
     KrakenTwoDriver,
     NzxtSmartDeviceDriver,
 ]
